@@ -1,0 +1,175 @@
+ERROR - 2022-03-26 10:43:22 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-03-26 10:43:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\codeigniter4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\codeigniter4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\crudModel.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(27): App\Models\crudModel->getDetail()
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->crud()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-26 10:44:01 --> Invalid file: pages/details.php
+#0 C:\xampp\htdocs\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/details.p...')
+#1 C:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('pages/details', Array, true)
+#2 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(39): view('pages/details', Array)
+#3 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->detail('1')
+#4 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-26 10:54:06 --> Undefined property: CodeIgniter\View\View::$crudModel
+#0 C:\xampp\htdocs\codeigniter4\app\Views\pages\details.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('pages/details', Array, true)
+#4 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(39): view('pages/details', Array)
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->detail('1')
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-26 10:57:40 --> Undefined property: CodeIgniter\View\View::$crudModel
+#0 C:\xampp\htdocs\codeigniter4\app\Views\pages\details.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('pages/details', Array, true)
+#4 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(39): view('pages/details', Array)
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->detail('1')
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-26 10:57:42 --> Undefined property: CodeIgniter\View\View::$crudModel
+#0 C:\xampp\htdocs\codeigniter4\app\Views\pages\details.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('pages/details', Array, true)
+#4 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(39): view('pages/details', Array)
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->detail('1')
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-26 10:58:03 --> Undefined variable: orang
+#0 C:\xampp\htdocs\codeigniter4\app\Views\pages\details.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('pages/details', Array, true)
+#4 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(39): view('pages/details', Array)
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->detail('1')
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-26 11:12:30 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\codeigniter4\app\Views\pages\details.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('pages/details', Array, true)
+#4 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(39): view('pages/details', Array)
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->detail('pages')
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-26 11:36:57 --> Undefined variable: title
+#0 C:\xampp\htdocs\codeigniter4\app\Views\layout\defaultheadfoot.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codeigniter4\system\View\View.php(226): CodeIgniter\View\View->render('layout/defaulth...', Array, true)
+#4 C:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('pages/create', Array, true)
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(47): view('pages/create')
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->create()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-26 12:23:21 --> syntax error, unexpected 'public' (T_PUBLIC), expecting ';' or ','
+#0 C:\xampp\htdocs\codeigniter4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\codeigniter4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\crud...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\crud...')
+#3 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(12): spl_autoload_call('App\\Models\\crud...')
+#4 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-26 12:23:44 --> syntax error, unexpected 'public' (T_PUBLIC), expecting ';' or ','
+#0 C:\xampp\htdocs\codeigniter4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\codeigniter4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\crud...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\crud...')
+#3 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(12): spl_autoload_call('App\\Models\\crud...')
+#4 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-26 12:23:46 --> syntax error, unexpected 'public' (T_PUBLIC), expecting ';' or ','
+#0 C:\xampp\htdocs\codeigniter4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\codeigniter4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\crud...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\crud...')
+#3 C:\xampp\htdocs\codeigniter4\app\Controllers\Pages.php(12): spl_autoload_call('App\\Models\\crud...')
+#4 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-26 13:23:02 --> Too few arguments to function App\Controllers\Pages::edit(), 0 passed in C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->edit()
+#1 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-26 13:23:38 --> Too few arguments to function App\Controllers\Pages::edit(), 0 passed in C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->edit()
+#1 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-26 13:23:39 --> Too few arguments to function App\Controllers\Pages::edit(), 0 passed in C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->edit()
+#1 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-26 13:23:47 --> Too few arguments to function App\Controllers\Pages::edit(), 0 passed in C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->edit()
+#1 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-26 13:25:36 --> Too few arguments to function App\Controllers\Pages::edit(), 0 passed in C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->edit()
+#1 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-26 13:25:53 --> Too few arguments to function App\Controllers\Pages::edit(), 0 passed in C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Pages->edit()
+#1 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
